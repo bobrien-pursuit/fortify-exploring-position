@@ -1,0 +1,29 @@
+body, html {
+    margin-left: 50px;
+    margin-top: 50px;
+    
+}
+.card {
+    padding: 5px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 150px, 150px, 150px;
+    grid-template-areas: "tag" "description" "facts";
+    width: 300px;
+    height: 450px;
+    border: 3px black solid;
+
+  &__tag {
+        grid-area: "tag";
+        background-color: blue;
+    }
+  &__tag {
+        grid-area: "description";
+        background-color: green;
+  }
+  &__facts {
+        grid-area: "facts";
+        background-color: red;
+  }
+}

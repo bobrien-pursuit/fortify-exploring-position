@@ -1,0 +1,49 @@
+body, html {
+  margin-left: 50px;
+  margin-top: 50px;
+  background-color: #e4e8f3;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 554px;
+  grid-template-rows: repeat(3, 173px);
+  grid-template-areas: "tag"
+                       "description"
+                       "facts";
+  width: 520px;
+  height: 554px;
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.card__tag {
+  grid-area: "tag";
+  align-items: center;
+  font-size: 32px;
+  
+}
+.card__description {
+  grid-area: "description";
+  font-size: 24px;
+}
+.card__facts {
+  grid-area: "facts";
+  display: grid;
+  grid-template-areas: "one two";
+  grid-template-columns: 48% 48%;
+  grid-template-rows: 1fr;
+  padding: 5px;
+}
+
+.card__facts__one {
+  border: 3px solid black;
+}
+.card__facts__two {
+  border: 3px solid black;
+  margin-left: 5px;
+}
+
+/*# sourceMappingURL=styles.css.map */
